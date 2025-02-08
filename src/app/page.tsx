@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma"
-import { blog } from "@prisma/client"
+// import { blog } from "@prisma/client"
 
 
 const page = async () => {
@@ -8,7 +8,7 @@ const page = async () => {
 
   return (
     <div>
-      {blogs.map((elem:blog) => (
+      {blogs.map((elem) => (
         <div key={elem.id}>
           <h1>タイトル：{elem.title}</h1>
           <p>内容：{elem.content}</p>

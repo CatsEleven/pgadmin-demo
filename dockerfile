@@ -6,7 +6,7 @@ COPY ./package*.json ./
 RUN npm install
 COPY ./ .
 
-RUN npm run build && npx prisma generate
+RUN npm run build
 EXPOSE 3000
 
 # CMDはコンテナ起動時に実行
